@@ -4,7 +4,7 @@
   "description": "Easy reading and writing NFC tags and cards",
   "keywords": [
     "arc122",
-    "card",
+    "card",a
     "desfire",
     "mifare",
     "ndef",
@@ -46,19 +46,19 @@
     "example-ndef": "node -r @babel/register examples/ndef.js",
     "example-uid-logger": "node -r @babel/register examples/uid-logger.js",
     "example-without-auto": "node -r @babel/register examples/without-auto.js",
-    "prepack": "npm run build && npm run test",
+    "prepack": "yarn build && yarn test",
     "test": "cross-env NODE_ENV=test ava test --verbose"
   },
   "dependencies": {
     "@pokusew/pcsclite": "^0.5.1"
   },
   "devDependencies": {
-    "@babel/cli": "~7.0.0",
-    "@babel/core": "~7.0.0",
-    "@babel/plugin-proposal-class-properties": "~7.0.0",
-    "@babel/plugin-syntax-object-rest-spread": "~7.0.0",
-    "@babel/plugin-transform-modules-commonjs": "~7.0.0",
-    "@babel/register": "~7.0.0",
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.2.3",
+    "@babel/plugin-syntax-object-rest-spread": "^7.2.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.2.0",
+    "@babel/register": "^7.0.0",
     "ava": "^1.1.0",
     "chalk": "^2.4.2",
     "cross-env": "^5.2.0",
