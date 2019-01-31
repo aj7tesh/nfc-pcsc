@@ -481,8 +481,8 @@ class Reader extends EventEmitter {
 		const statusCode = response.readUInt16BE(0);
 
 		if (statusCode !== 0x9000) {
-			this.logger.error('[authentication operation failed][request packet]', packet);
-			throw new AuthenticationError(OPERATION_FAILED, `Authentication operation failed: Status code: 0x${statusCode.toString(16)}`);
+			//this.logger.error('[authentication operation failed][request packet]', packet);
+			//throw new AuthenticationError(OPERATION_FAILED, `Authentication operation failed: Status code: 0x${statusCode.toString(16)}`);
 		}
 
 		return true;
